@@ -1,0 +1,37 @@
+{
+  "name": "mylibrary",
+  "writers": [
+    {
+      "name": "J.R.R. Tolkien"
+    },
+    {
+      "name": "Douglas Adams"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Lord of the Rings",
+      "pages": 1178,
+      "category": "Fantasy",
+      "author": {
+        "name": "J.R.R. Tolkien"
+      }
+    },
+    {
+      "title": "The Silmarillion",
+      "pages": 384,
+      "category": "Fantasy",
+      "author": {
+        "name": "J.R.R. Tolkien"
+      }
+    },
+    {
+      "title": "The Hitchhiker\u0027s Guide to the Galaxy",
+      "pages": 224,
+      "category": "ScienceFiction",
+      "author": {
+        "name": "Douglas Adams"
+      }
+    }
+  ]
+}
