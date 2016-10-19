@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Uml
+Bundle-SymbolicName: xtend.codegen.uml
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.uml2.uml,
+ org.eclipse.xtext;visibility:=reexport,
+ org.eclipse.xtend.lib,
+ org.eclipse.core.runtime,
+ org.apache.commons.logging,
+ org.apache.log4j,
+ org.objectweb.asm;bundle-version="5.0.1"

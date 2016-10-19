@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="Target Platform" sequenceNumber="10">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.xtext.sdk.feature.group" version="2.10.0.v201605250459"/>
+<unit id="org.eclipse.xtend.sdk.feature.group" version="2.10.0.v201605250459"/>
+<unit id="org.eclipse.uml2.sdk.feature.group" version="5.2.1.v20160822-0739"/>
+<repository location="http://download.eclipse.org/releases/neon/201609281000"/>
+</location>
+</locations>
+</target>

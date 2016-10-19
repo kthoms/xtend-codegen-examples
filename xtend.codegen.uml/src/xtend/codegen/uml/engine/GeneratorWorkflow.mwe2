@@ -1,0 +1,39 @@
+module xtend.codegen.uml.Generator
+
+var modelDir
+var javaPath = "src"
+var javaGenPath = "src-gen"
+
+Workflow {	
+	bean = xtend.codegen.uml.engine.GeneratorStandaloneSetup : setup {
+			config = {
+				javaGenPath = javaGenPath
+			}
+			doInit = true
+		}
+	
+	component = org.eclipse.xtext.mwe.Reader {
+		path = modelDir
+		register = setup
+		loadResource = {
+			slot = "model"
+		}
+	}
+	
+	component = org.eclipse.emf.mwe.utils.DirectoryCleaner {
+		directory = javaGenPath
+	}
+	
+	component = org.eclipse.xtext.generator.GeneratorComponent {
+		register = setup
+        slot = 'model'
+        outlet = {
+            path = javaGenPath
+        }
+        outlet = {
+        	outletName = "gen-once"
+            path = javaPath
+        }
+    }	
+    
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0LZN0JZPEeaTEZJ-OHRAWg" name="Library">
+  <packagedElement xmi:type="uml:Package" xmi:id="_0qhH4JZREeaTEZJ-OHRAWg" name="example">
+    <packagedElement xmi:type="uml:Package" xmi:id="_35G1sJZPEeaTEZJ-OHRAWg" name="library">
+      <packagedElement xmi:type="uml:Class" xmi:id="_6KhesJZPEeaTEZJ-OHRAWg" name="Author"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9hNGoJZPEeaTEZJ-OHRAWg" name="Book"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
