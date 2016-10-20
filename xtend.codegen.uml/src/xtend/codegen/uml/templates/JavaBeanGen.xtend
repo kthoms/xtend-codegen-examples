@@ -1,11 +1,10 @@
 package xtend.codegen.uml.templates
 
-import org.eclipse.xtext.generator.IGenerator
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.xtext.generator.IFileSystemAccess
 import javax.inject.Inject
-import org.eclipse.xtext.EcoreUtil2
+import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.uml2.uml.Class
+import org.eclipse.xtext.generator.IFileSystemAccess
+import org.eclipse.xtext.generator.IGenerator
 
 class JavaBeanGen implements IGenerator {
 	@Inject extension Naming
@@ -21,7 +20,9 @@ class JavaBeanGen implements IGenerator {
 		package «nearestPackage.qualifiedName»;
 		
 		public class «name» «IF !superClasses.empty» extends «superClasses.head.qualifiedName»«ENDIF»{
-			
+			«FOR a: ownedAttributes»
+				private «a.type.qualifiedName» «a.name»;
+			«ENDFOR»
 		}
 	'''
 }

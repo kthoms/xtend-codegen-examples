@@ -1,13 +1,13 @@
 package xtend.codegen.uml.validation
 
-import javax.inject.Inject
+import org.eclipse.uml2.uml.Class
 import org.eclipse.uml2.uml.Model
 import org.eclipse.uml2.uml.UMLPackage
 import org.eclipse.xtext.validation.AbstractDeclarativeValidator
 import org.eclipse.xtext.validation.Check
 
 class BasicConstraints extends AbstractDeclarativeValidator {
-	@Inject UMLPackage pck
+	UMLPackage pck = UMLPackage.eINSTANCE
 	
 	override protected getEPackages() {
 		#[UMLPackage.eINSTANCE]
@@ -24,7 +24,7 @@ class BasicConstraints extends AbstractDeclarativeValidator {
 	}
 	
 	@Check(NORMAL)
-	def check_Class (org.eclipse.uml2.uml.Class it) {
+	def check_Class (Class it) {
 		if (getAllAttributes.empty) {
 			warning("Class "+name+" does not have any attributes", it, pck.namedElement_Name)
 		}

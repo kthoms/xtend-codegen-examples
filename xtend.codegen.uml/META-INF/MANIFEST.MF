@@ -4,6 +4,7 @@ Bundle-Name: Uml
 Bundle-SymbolicName: xtend.codegen.uml
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.uml2.uml,
+ org.eclipse.uml2.uml.resources,
  org.eclipse.xtext;visibility:=reexport,
  org.eclipse.xtend.lib,
  org.eclipse.core.runtime,

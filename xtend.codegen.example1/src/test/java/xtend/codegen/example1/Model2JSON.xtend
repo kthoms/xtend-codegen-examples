@@ -1,11 +1,10 @@
 package xtend.codegen.example1
 
+import com.google.gson.GsonBuilder
 import xtend.codegen.example1.model.Book
+import xtend.codegen.example1.model.BookCategory
 import xtend.codegen.example1.model.Library
 import xtend.codegen.example1.model.Writer
-import xtend.codegen.example1.model.BookCategory
-import com.google.gson.Gson
-import com.google.gson.GsonBuilder
 
 class Model2JSON {
 	def static void main(String[] args) {
