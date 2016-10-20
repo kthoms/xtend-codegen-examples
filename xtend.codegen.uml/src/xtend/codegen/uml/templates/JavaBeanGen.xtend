@@ -17,11 +17,20 @@ class JavaBeanGen implements IGenerator {
 	}
 	
 	def generate (Class it) '''
-		package «nearestPackage.qualifiedName»;
+		package «packageName»;
 		
 		public class «name» «IF !superClasses.empty» extends «superClasses.head.qualifiedName»«ENDIF»{
 			«FOR a: ownedAttributes»
-				private «a.type.qualifiedName» «a.name»;
+				private «a.typeName» «a.name»;
+			«ENDFOR»
+
+			«FOR a: ownedAttributes»
+				public «a.typeName» get«a.name.toFirstUpper» () {
+					return «a.name»;
+				}
+				public void set«a.name.toFirstUpper» («a.typeName» «a.name») {
+					return this.«a.name» = «a.name»;
+				}
 			«ENDFOR»
 		}
 	'''

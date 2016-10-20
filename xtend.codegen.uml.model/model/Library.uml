@@ -2,12 +2,26 @@
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0LZN0JZPEeaTEZJ-OHRAWg" name="Library">
   <packagedElement xmi:type="uml:Package" xmi:id="_0qhH4JZREeaTEZJ-OHRAWg" name="example">
     <packagedElement xmi:type="uml:Package" xmi:id="_35G1sJZPEeaTEZJ-OHRAWg" name="library">
-      <packagedElement xmi:type="uml:Class" xmi:id="_6KhesJZPEeaTEZJ-OHRAWg" name="Author">
+      <packagedElement xmi:type="uml:Class" xmi:id="_6KhesJZPEeaTEZJ-OHRAWg" name="Writer">
         <ownedAttribute xmi:id="_IbDDwJatEeamyLy6OGPOOA" name="name">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_9hNGoJZPEeaTEZJ-OHRAWg" name="Book"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9hNGoJZPEeaTEZJ-OHRAWg" name="Book">
+        <ownedAttribute xmi:id="_FP9XEJbJEeamyLy6OGPOOA" name="title">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_RqlrwJbJEeamyLy6OGPOOA" name="pages">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_kRi_0JbJEeamyLy6OGPOOA" name="author" type="_6KhesJZPEeaTEZJ-OHRAWg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Yh46wJbJEeamyLy6OGPOOA" name="BookCategory">
+        <ownedLiteral xmi:id="_bSG_oJbJEeamyLy6OGPOOA" name="Mystery"/>
+        <ownedLiteral xmi:id="_dzW0YJbJEeamyLy6OGPOOA" name="ScienceFiction"/>
+        <ownedLiteral xmi:id="_d_yt4JbJEeamyLy6OGPOOA" name="Biography"/>
+        <ownedLiteral xmi:id="_eG40YJbJEeamyLy6OGPOOA" name="Fantasy"/>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
 </uml:Model>
