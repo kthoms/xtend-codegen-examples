@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ui
+Bundle-SymbolicName: xtend.codegen.uml.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: xtend.codegen.uml,
+ org.eclipse.ui.workbench,
+ org.eclipse.xtext.ui,
+ org.eclipse.uml2.uml.editor,
+ org.apache.log4j,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.builder

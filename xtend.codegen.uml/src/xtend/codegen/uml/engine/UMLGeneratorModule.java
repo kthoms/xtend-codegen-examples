@@ -19,7 +19,7 @@ import org.eclipse.xtext.validation.IResourceValidator;
 import xtend.codegen.uml.templates.Root;
 import xtend.codegen.uml.validation.BasicConstraints;
 
-public class GeneratorModule extends AbstractGenericResourceRuntimeModule {
+public class UMLGeneratorModule extends AbstractGenericResourceRuntimeModule {
 
 	@Override
 	public Class<? extends IResourceServiceProvider> bindIResourceServiceProvider() {

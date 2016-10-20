@@ -40,7 +40,7 @@ public class GeneratorStandaloneSetup implements ISetup {
 	@Override
 	public Injector createInjectorAndDoEMFRegistration() {
 		if (injector == null) {
-			injector = Guice.createInjector(new GeneratorModule(), getDynamicModule());
+			injector = Guice.createInjector(new UMLGeneratorModule(), getDynamicModule());
 			register(injector);
 		}
 		return injector;
