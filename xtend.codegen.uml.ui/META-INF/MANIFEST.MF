@@ -11,3 +11,4 @@ Require-Bundle: xtend.codegen.uml,
  org.eclipse.xtext.ui.shared,
  org.eclipse.xtext.builder
 Bundle-Activator: xtend.codegen.uml.ui.Activator
+Bundle-ActivationPolicy: lazy
