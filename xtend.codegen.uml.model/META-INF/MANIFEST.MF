@@ -4,3 +4,4 @@ Bundle-Name: Model
 Bundle-SymbolicName: xtend.codegen.uml.model
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: xtend.codegen.uml;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
