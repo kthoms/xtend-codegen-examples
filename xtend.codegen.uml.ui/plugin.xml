@@ -9,5 +9,11 @@
               uriExtension="uml">
         </resourceServiceProvider>
     </extension>
+    <extension
+          point="org.eclipse.xtext.builder.participant">
+       <participant
+             class="xtend.codegen.uml.ui.ExecutableExtensionFactory:org.eclipse.xtext.builder.BuilderParticipant">
+       </participant>
+    </extension>
   
 </plugin>

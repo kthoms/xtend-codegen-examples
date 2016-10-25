@@ -6,6 +6,9 @@
         <ownedAttribute xmi:id="_IbDDwJatEeamyLy6OGPOOA" name="name">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedAttribute>
+        <ownedAttribute xmi:id="_lwhSMJqNEeaOPrptcBrCuA" name="name2">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9hNGoJZPEeaTEZJ-OHRAWg" name="Book">
         <ownedAttribute xmi:id="_FP9XEJbJEeamyLy6OGPOOA" name="title">
