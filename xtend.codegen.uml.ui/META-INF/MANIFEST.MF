@@ -10,3 +10,4 @@ Require-Bundle: xtend.codegen.uml,
  org.apache.log4j,
  org.eclipse.xtext.ui.shared,
  org.eclipse.xtext.builder
+Bundle-Activator: xtend.codegen.uml.ui.Activator
