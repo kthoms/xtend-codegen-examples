@@ -6,10 +6,11 @@ import org.eclipse.xtext.generator.IFileSystemAccess
 import org.eclipse.xtext.generator.IGenerator
 
 class Root implements IGenerator {
-	@Inject JavaBeanGen javaBeanGen
+	@Inject JavaBeanTemplate javaBeanTemplate
+	// add more templates here
 	
 	override doGenerate(Resource input, IFileSystemAccess fsa) {
-		javaBeanGen.doGenerate(input,fsa)
+		javaBeanTemplate.doGenerate(input,fsa)
 	}
 	
 }
