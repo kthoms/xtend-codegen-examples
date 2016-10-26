@@ -28,7 +28,7 @@ class JavaBeanTemplate implements IGenerator {
 					return «a.name»;
 				}
 				public void set«a.name.toFirstUpper» («a.typeName» «a.name») {
-					return this.«a.name» = «a.name»;
+					this.«a.name» = «a.name»;
 				}
 			«ENDFOR»
 		}
