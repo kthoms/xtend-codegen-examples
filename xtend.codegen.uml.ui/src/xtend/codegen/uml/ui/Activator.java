@@ -36,19 +36,15 @@ public class Activator extends AbstractUIPlugin {
         return injector;
     }
  
-    private void initializeEcoreInjector() {
-        injector = Guice.createInjector(
-                Modules.override(Modules.override(new UMLGeneratorModule())
-                .with(new UmlUiModule(plugin)))
-                .with(new SharedStateModule()));
-    }
- 
     @Override
     public void start(BundleContext context) throws Exception {
         super.start(context);
         plugin = this;
         try {
-            initializeEcoreInjector();
+            injector = Guice.createInjector(
+                    Modules.override(Modules.override(new UMLGeneratorModule())
+                    .with(new UmlUiModule(plugin)))
+                    .with(new SharedStateModule()));
         } catch(Exception e) {
             logger.error(e.getMessage(), e);
             throw e;
